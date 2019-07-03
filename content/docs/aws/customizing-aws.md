@@ -48,8 +48,9 @@ nodeGroups:
     minSize: 0
     maxSize: 2
     volumeSize: 30
-    allowSSH: true
-    sshPublicKeyPath: '~/.ssh/id_rsa.pub'
+    ssh:
+      allow: true
+      publicKeyPath: '~/.ssh/id_rsa.pub'
 
   # Example of GPU node group
   # - name: Tesla-V100
